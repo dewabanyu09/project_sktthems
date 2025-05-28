@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress Themes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #fff;
+    }
+
+    .hero-section {
+      background: linear-gradient(90deg, #7f8185, #4364F7);
+      color: #0a0a0a;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .theme-section {
+      padding: 40px 15px;
+      color: #0f0e0e;
+    }
+
+    .cookie-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #514a4a;
+      color: #fcfafa;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .column {
+      background-image: url(commercethemes.webp);
+      height: 500px;
+      width: 400px;
+      margin-top: 10px;
+      border-radius: 20px;
+      margin-left: 15px;
+    }
+
+    .column a p {
+      background-color: #9b5c8f;
+      border-radius: 50px;
+      margin: 380px auto 0;
+      color: #efeaea;
+      width: 270px;
+    }
+
+    .column a p:hover {
+      background-color: black;
+    }
+
+    .container {
+      padding: 10px 0;
+    }
+
+    .wrapper {
+      padding: 10px 10%;
+    }
+
+    .card_area {
+      display: grid;
+      grid-gap: 30px;
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-items: end;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .card img {
+      height: 350px;
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.5s;
+    }
+
+    .overlay {
+      height: 0;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(transparent, #11aaeb 60%);
+      padding: 0 50px;
+      text-align: center;
+      font-size: 14px;
+      transition: height 0.5s;
+      border-radius: 10px;
+    }
+
+    .overlay h3 {
+      margin-top: 55%;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      opacity: 0;
+    }
+
+    .overlay a {
+      margin-top: 10px;
+      padding: 15px;
+      font-size: 14px;
+      color: #054ea1;
+      background: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+    }
+
+    .card:hover img {
+      transform: scale(1.2);
+    }
+
+    .card:hover .overlay {
+      height: 100%;
+    }
+
+    .kartu {
+      background: linear-gradient(to right, #3a47d5, #00c6ff);
+      color: white;
+      padding: 25px;
+    }
+
+    .kartu .containers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      flex: 1;
+    }
+
+    .feature-box {
+      background: white;
+      color: black;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box img {
+      width: 80px;
+      height: 60px;
+      margin-bottom: 30px;
+    }
+
+    .feature-title {
+      font-weight: bold;
+    }
+
+    .text-section {
+      max-width: 300px;
+      padding-left: 40px;
+    }
+
+    .speed-card {
+      border-radius: 15px;
+      padding: 60px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .speed-cardx {
+      border-radius: 15px;
+      height: 500px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
+      margin-left: 50px;
+    }
+
+.rating-section {
+  background: linear-gradient(to right, #3a47d5, #00c6ff);
+  color: white;
+  padding: 60px 20px 80px 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.rating-box {
+  background: white;
+  color: #000;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-box .left {
+  flex: 1 1 240px;
+  text-align: left;
+  user-select: none;
+}
+
+.rating-box .left h1 {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.rating-box .left p {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.rating-box .left .stars {
+  font-size: 22px;
+  color: gold;
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+.rating-box .right {
+  flex: 0 1 130px;
+  text-align: right;
+  user-select: none;
+}
+
+.rating-box .right img {
+  height: 70px;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+.rating-box .right p {
+  margin: 0;
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+}
+
+
+#support-section {
+  max-width: 1140px;
+  margin: 50px auto 100px auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937; 
+  user-select: none;
+}
+
+#support-section .image-container {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+#support-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  user-select: none;
+}
+
+#support-section .content-container {
+  flex: 1 1 50%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+#support-section h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  color: #111827; 
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+#support-section p {
+  font-size: 1.125rem;
+  color: #4b5563; 
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  user-select: none;
+}
+
+#support-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.support-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 120px;
+  user-select: none;
+}
+
+.support-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 42px;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  user-select: none;
+}
+
+.support-icon-box span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+  text-align: center;
+  line-height: 1.3;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+  #support-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  #support-section .image-container,
+  #support-section .content-container {
+    flex: 1 1 100%;
+  }
+  .rating-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rating-box .left,
+  .rating-box .right {
+    text-align: center;
+    flex: unset;
+  }
+}
+h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+    .accordion {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+    .accordion-item {
+      border: none;
+      background-color: transparent;
+      margin-bottom: 15px;
+    }
+    .accordion-button {
+      border-radius: 20px;
+      font-weight: 600;
+      padding: 1rem 1.25rem;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: white;
+      color: #000;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .accordion-body {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="" href="#"><img src="dewa09/foto/sktthems.jpeg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="damar07/business.html">Themes</a></li>
+          <li class="nav-item"><a class="nav-link" href="bayu06/features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="ipang123.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="#">My Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <header class="hero-section">
+    <div class="container">
+      <h1>Best WordPress Themes and Website Templates</h1>
+      <p>Page builder friendly WordPress themes with 1 click demo import</p>
+      <a href="damar07/business.html" class="btn btn-primary">View All Themes</a>
+    </div>
+  </header>
+
+  <div class="column d-inline-block">
+    <h4 class="text-center pt-3">WooCommerce Themes</h4>
+    <a href="./dewa09/themes.html" class="text-decoration-none">
+     <p class="text-center p-2">View All WooCommerce Themes</p>
+    </a>
+  </div>
+  <div class="column d-inline-block" style="background-image: url(elementorthemes.webp); background-color: #ffedf6">
+    <h4 class="text-center pt-3">Elemantor Themes</h4>
+    <a href="damar07/business.html" class="text-decoration-none">
+      <p class="text-center p-2">View All Elemantor Themes</p>
+    </a>
+  </div>
+  <div class="column d-inline-block" style="background-image: url(gutenbergthemes.webp); background-color: #e9fbf9">
+    <h4 class="text-center pt-3">Gutenberg Themes</h4>
+    <a href="./dewa09/gutenberg.html" class="text-decoration-none">
+      <p class="text-center p-2">View All Guntenberg Themes</p>
+    </a>
+  </div>
+
+  <section class="theme-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Top-Performing WP Themes</h1>
+          <p>We have a host of best selling WordPress templates bundles and packages. We have created and sorted them as per customer needs and requirements.</p>
+          <p>For example we have the best Gutenberg package for customers who need websites editable by the core page builder. Elementor templates make use of Elementor page builder. These templates are also compatible with WooCommerce.</p>
+          <p>So, without wasting time, Select the best WP theme which suits you the best. Enter the content and launch your website.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="dewa09/foto/selll.webp" style="width: 100%;" alt="">
+        </div>
+      </div>
+      <div class="text-center my-4">
+        <a href="damar07/business.html" class="btn btn-primary">View All WooCommerce Themes</a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="card_area">
+        <div class="card">
+          <img src="dewa09/foto/xxc.png" alt="Organic">
+          <div class="overlay">
+            <h3>Organic</h3>
+            <a href="./dewa09/view demo.html">View Demo</a>
+            <a href="./dewa09/buy now.html">Buy Now</a>
+          </div>
+          <h3 style="text-align: center;">Organic</h3>
+        </div>
+        <div class="card">
+          <img src="dewa09/foto/cxz.png" alt="Cleaning Company">
+          <div class="overlay">
+            <h3>Cleaning Company</h3>
+            <a href="./dewa09/view demo.html">View Demo</a>
+            <a href="./dewa09/buy now.html">Buy Now</a>
+          </div>
+          <h3 style="text-align: center;">Organic</h3>
+        </div>
+        <div class="card">
+          <img src="dewa09/foto/cxv.png" alt="Kraft">
+          <div class="overlay">
+            <h3>Kraft</h3>
+            <a href="./dewa09/view demo.html">View Demo</a>
+            <a href="./dewa09/buy now.html">Buy Now</a>
+          </div>
+          <h3 style="text-align: center;">Organic</h3>
+        </div>
+      </div>
+    </div>
+    <br>
+      <center>
+        <a href="" class="btn btn-primary">View All Themes</a>
+      </center>
+    <br>
+    </div>
+
+    <div class="kartu">
+      <div class="containers">
+        <div class="features">
+          <div class="feature-box">
+            <img src="dewa09/foto/qwe.png" alt="">
+            <div>One Click <div class="feature-title">Demo Import</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/elementor.png" alt="">
+            <div>Elementor <div class="feature-title">Page Builder</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/woo.png" alt="">
+            <div>Woocommerce <div class="feature-title">Compatible</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/guten.png" alt="">
+            <div>Gutenberg <div class="feature-title">Compatible</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/unli.png" alt="">
+            <div>Unlimited <div class="feature-title">Websites</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/mobile.png" alt="">
+            <div>Mobile <div class="feature-title">Friendly</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/white.png" alt="">
+            <div>White - Label <div class="feature-title">Whitelabel</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/site.png" alt="">
+            <div>Site/Custom <div class="feature-title">Layouts</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/image.png" alt="">
+            <div>Image <div class="feature-title">Copyright Free</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/gpl.png" alt="">
+            <div>GPL licensed <div class="feature-title">Coding</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/psd.png" alt="">
+            <div>PSD on <div class="feature-title">Demand</div></div>
+          </div>
+          <div class="feature-box">
+            <img src="dewa09/foto/compatible.png" alt="">
+            <div>Compatible with <div class="feature-title">Latest Version</div></div>
+          </div>
+        </div>
+        <div class="text-section">
+          <h1>Top WordPress Templates Features</h1>
+          <p>We have a plethora of top WordPress website templates features. These features make these templates even more attractive as their usability increases.</p>
+          <p>Some of the popular website templates features are responsive, mobile friendly, SEO optimized, lightweight, WooCommerce support, multilingual, page builder compatibility, and more.</p>
+          <a href="damar07/business.html" class="btn btn-primary">view all features</a>
+        </div>
+      </div>
+    </div>
+  
+  <section class="theme-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Optimizing Your Website Load Times with SKT's Lightweight Themes Design</h1>
+            <p>Nowadays search engines are giving more importance to page loading speed. Hence it has become essential that your website should also load faster.</p>            
+            <p>To cater to this all our best WordPress themes have been coded in such a way that they are page speed and core web vitals optimized. 
+              Our templates prioritize features such as lightweight coding and less use of JS, focus on image optimization and compatibility with image plugins, caching plugin compatibility, performance plugins and CDN compatibility.</p>
+            <p>All of these compatibility will result in very less load time for a web page and will improve the overall page speed and search engine rankings. It will also lead to better user experience.</p>          
+        </div>
+        <div class="col-md-6">
+          <img src="dewa09/foto/asd.png" style="width: 100%;" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="section-title">
+        <p class="text-primary fw-bold">Why Choose Us?</p>
+        <h1 class="fw-bold">Unparalleled Speed</h1>
+        <h3 class="text-muted">Performance</h3>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/ping.png" alt="" style="height:55px; width:150px;">
+            <h3 class="mt-3 fw-bold">100%</h3>
+            <p class="text-primary">Speed Grade</p>
+          </div>
+        </div>
+      
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/dev.png" alt="" style="height:55px; width: 150px;">
+            <h3 class="mt-3 fw-bold">100%</h3>
+            <p class="text-primary">Speed Grade</p>
+          </div>
+        </div>
+      
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/gt.png" alt="" style="height:55px; width: 150px;">
+            <h3 class="mt-3 fw-bold">400ms</h3>
+            <p class="text-primary">Load Time</p>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/ys.png" alt="" style="height:55px; width: 150px;">
+            <h3 class="mt-3 fw-bold">91%</h3>
+            <p class="text-primary">Speed Grade</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="container py-5">
+          <div class="section-title">
+            <p class="text-primary fw-bold">Testimonials</p>
+            <h1 class="fw-bold">Users Love SKT Themes - Here's Why</h1>
+          </div>
+      </div>
+      <div class="row g-4">
+        <div class="speed-cardx d-inline-block">
+          <h2>Best WordPress Templates</h2>
+          <p>I made the purchase of the WordPress website templates package and 
+            have been using them for the past 6 months. They are super easy to 
+            use and customize. And SKT Themes team has been responsive to 
+            my support requests and very helpful.</p>
+        </div>
+        <div class="speed-cardx d-inline-block">
+          <h2>What a Great Company</h2>
+          <p>Quick to respond to any support requests with great knowledge about
+             WordPress templates. I am going with the lifetime package now and 
+             won't have to worry since i know my support will be taken care of.</p>
+        </div>
+        <div class="speed-cardx d-inline-block">
+          <h2>Problem Solved</h2>
+          <p>I was using some other company templates earlier and only got into
+             more trouble. Sleepless nights and issues. Finally signed up with
+             them and my issues have just vanished into thin air. This is by 
+             far the best support I have received.</p>
+        </div>
+      </div>  
+    </div>
+
+    
+  <section class="rating-section" aria-label="Customer Ratings and Reviews">
+    <div class="rating-box">
+      <div class="left" role="region" aria-live="polite" aria-atomic="true">
+        <h1 aria-label="Six thousand six hundred and thirty six">6636</h1>
+        <p>Customers Rated Our Support</p>
+        <div class="stars" aria-label="Five star rating">★★★★★</div>
+        <p aria-label="Average rating five out of five">Average rating 5/5</p>
+      </div>
+      <div class="right text-end">
+        <button aria-label="Trustpilot rating and reviews"><img src="trustpilot.png" alt="Trustpilot Rating" loading="lazy" /></button>
+        <p>Reviews 284</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="support-section" aria-labelledby="support-title" role="region">
+    <div class="image-container">
+      <img src="dewa09/foto/qwa.png" alt="Man wearing headset sitting at a desk with laptop and chat bubbles" loading="lazy" />
+    </div>
+    <div class="content-container">
+      <h2 id="support-title">Top Notch Customizing WordPress Theme and Template Support</h2>
+      <p>
+        All our best WordPress themes are backed by good support and regular updates.
+        We have made human driven documentation with easy to follow videos.
+        We also provide email and forum support and try to resolve issues quickly.
+      </p>
+      <div id="support-icons" role="list" aria-label="Support features">
+        <div class="support-icon-box" role="listitem">
+          <div class="support-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+          <span>Documentation</span>
+        </div>
+        <div class="support-icon-box" role="listitem">
+          <div class="support-icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+          <span>Support</span>
+        </div>
+        <div class="support-icon-box" role="listitem">
+          <div class="support-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+          <span>Live Chat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2>FAQs</h2>
+    <div class="accordion" id="accordionExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            How much do your best WP themes cost?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>These best themes for WordPress start from as low as $39 and some of the complex templates cost around $48.</p>
+            <p>WP themes bundle package with several hundreds of themes costs around $69. Whereas the lifetime package with all plugins plus the WP themes costs around $199.</p>
+            <p>All the rates are in US Dollars currency.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            After purchase what do I get?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>After purchase, you can download the WordPress theme zip file. 
+              You can also alternatively go to my-account page and download the theme anytime you want. You get access to the my-account area and support forum to raise any ticket.
+             You can also email us using the contact page to get support</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            How to add demo import content
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Each template comes with 1 click demo import content.
+              So by just clicking on the step-by-step button you can import everything just like the demo and set it up on your website.
+              We have helpful videos given in the documentation of each theme under theme features on each theme page.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are all themes accessible ready
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>We haven’t tested all the themes for accessibility.
+            But you can check and make use of accessibility ready plugins to make any of our best WordPress templates accessible ready.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are the wordpress templates conpatible with woocommerce
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes, all of the WP templates are compatible with WooCommerce. Since its plug and play, any template can be converted to an online shopping platform by using this plugin.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Can i buy multiple themes
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>We would suggest you go for the WordPress themes packages of Elementor, Gutenberg, All themes and Lifetime which costs less than 2 templates.
+              This way you can save money and have all the website templates.</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Is it worth it to buy SKT's wordpress templates
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>We provide unlimited support for 1 year for every theme. Isn’t that great? Within a year you can build as many websites and you already are then comfortable using the best WP themes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Can i use the purcehased wordpress themes on mutliple wepsites
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes, you can do that. Multiple websites and domains are allowed. This is because most people work in localhost and then want to transfer their websites to live servers.
+              In case you are a developer you can also use these starter websites to build sites for your clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Is it easy to customize the purcehased wordpress templates as pey may brand
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes. The header, the footer and the slider are editable from theme options or customizer and the rest all is editable using page builder.
+              It is very easy to customize the WP templates by using page builder options and customizers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            will the finished website be aesthetically peleasing
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>That depends on the quality of image selection, the colors you choose etc. We have created aesthetically pleasing design website templates. 
+              If you need any support or paid customization we do provide the same.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Is it SEO optimized?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes and also compatible with all popular SEO plugins for getting you better search engine rankings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are SKT themes mobile-friendly and responsive?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>All our starter websites are mobile friendly and responsive for all kinds of devices. So tested with laptops, desktops, tablets, and mobile phones of varied screen resolutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are all the themes page speed and core web vitals optimized?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Of course, they are. Plus they have been optimized to work with Cloudflare CDN, WP Rocket and other kinds of cache plugins for further enhancement and optimization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Do they support popolar plugins?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>All popular plugins like contact forms, SEO plugins, eCommerce plugins, galleries etc are supported by these best WordPress themes.
+              There are more than 50,000 plugins and counting. Its not possible for us to check for each one of them.
+              But the popular ones are tested with our templates.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+           Can we ask for extra customisation and hire you?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Of course, we have a hire WordPress developer page and you can send us your requirements and we can get them done for you.
+
+              Our charges are nominal and start at 15 USD per hour.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are there any lifetime package for your themes?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes of course kindly check the lifetime WordPress package which includes both themes and plugins for life with lifetime support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Is it safe to use the images the come with a demo of your themes?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>All the images that we use are CC0 compliant.
+              However, to be on the safer side we encourage users to use their images.
+              You can also check CC0 image websites and find relevant images for your website.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Is buying the theme a 1 time single charge
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>No, it’s an annual charge unless you buy the lifetime package which is a one-time single charge. However, you can cancel the subscription whenever you want.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            What is your license policy?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Kindly check the terms and conditions for the licensing policy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            What is your refund policy?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>We do not process refunds and all sales are final.
+              This is because we are selling non-tangible digital products which cannot be returned.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Do you provide free installation and support?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes after purchase of the WordPress themes package, one can connect with us via email or contact page and ask for free theme installation and support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+           Do you provide PSD or Pohotoshop design files?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes for single theme purchases, we provide single theme PSD.
+              For All themes bundle however we cannot provide so many PSD or photoshop files.
+
+              However, we do provide PSD files for the Lifetime package as well.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            what are the renewal fees?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>For support, the renewal fee is only 18 USD. In case you want the updated theme plus the support after a year, you will have to re-purchase the theme again.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Do you provide discounts for NGO or charity websites?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>We do provide discounts for single theme purchases for NGO or charity websites. We however do not provide discounts on bundle packages since they are already discounted.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+           Wich is the best-selling wordpress theme?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>WordPress themes bundle is the best selling package from our end because at less cost than 2 themes it gives you access to hundreds of themes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Are there any free wordpress theme for trial?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Yes we have free WordPress themes which are available. You can use them. They have limited features than the paid version but are usable and can be used to check how paid one will work plus you can utilise them to develop a small website.</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+    
+    
+    <div>
+      <h1 align="center">Work Smarter, Create  Better, Build Faster</h1>
+      <div class="container py-5">
+      <div class="section-title">
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/vbn.png" alt="" style="height:55px; width:150px;">
+            <p class="text-primary">Buy</p>
+            <h3 class="mt-3 fw-bold">Theme</h3>
+          </div>
+        </div>
+      
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/vgh.png" alt="" style="height:55px; width: 150px;">
+            <p class="text-primary">Get free</p>
+            <h3 class="mt-3 fw-bold">Installation</h3>
+          </div>
+        </div>
+      
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/vyu.png" alt="" style="height:55px; width: 150px;">
+            <p class="text-primary">Edit With</p>
+            <h3 class="mt-3 fw-bold">Pagebuilder</h3>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="speed-card">
+            <img src="dewa09/foto/vnm.png" alt="" style="height:55px; width: 150px;">
+            <p class="text-primary">Make Your</p>
+            <h3 class="mt-3 fw-bold">Wepsite Live</h3>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+    <div>
+      <p>At SKT Themes we handpick our best WordPress themes and create it as per client demands and current market trends. 
+        So be it responsive or be it google fonts or theme options to make the site easy to use, our themes have all of the features.</p>
+      <h3 class="mt-3 fw-bold">WordPress Website Themes and Templates by SKT</h3>
+      <p>Consider a website as a powerful marketing tool that can help you achieve the 
+        impossible by connecting your business to unlimited horizons across the globe you never could have imagined.</p>
+      <p>Since online medium doesn’t know any boundaries it is easier to have your business located somewhere else but still cater to the whole world.</p>
+      <p>A good professional WordPress theme can help you get the most out of your website and make you go places with your website getting more 
+        traffic and hits as well as sales or leads due to proper implementation of the call to action buttons and design.</p>
+      <p>Since there are many businesses and their websites in the same domain it is important that your website stands out from the rest of the crowd and give you a headstart over others.</p>
+      <p>Hence for this very reason nicely designed WordPress website templates can help you get to the top of others in this time of competition.</p>
+      <p>Also there should be modern and futuristic features so that one can add useful functions easily into the website without waiting for someone to add them. 
+        So on your own one can easily add any feature or functionality.</p>
+      <h3 class="mt-3 fw-bold">Essential Features Of SKT Themes In WordPress Web Development</h3>
+      <p><h4>1. Elementor Based Latest WP Themes.</h4></p>
+      <p>Elementor is future as has been advocated by WordPress dot org team and has been recommended to be used for default approach and hassle free guidelines to any user.</p>
+      <p><h4>2. Compatible with Recommended Page Builders.</h4></p>
+      <p>Page builders are proving to be the best assistive technology for users who don’t have much experience with coding and hence they can add any fancy layout and features all at the click of a few buttons using page builders.</p>
+      <p>Some page builders explicitly and out of the box work with all themes provided by SKT and hence they make the life of users easier.</p>
+      <p><h4>3. Font based social icons</h4></p>
+      <p> Font based social icons have 2 easy advantages: First one being that there are more than 800+ 
+        icons that can be used throughout the website and second one that since these are font based icons one can easily change their sizes as 
+        well as colors easily using CSS or directly via theme options.</p>
+      <p><h4>4. Unlimited possibilities of colors</h4></p>
+      <p>With color pickers it has become so easy for any user to change colors of any elements you see on the entire website. So independent of any element different color schemes can be used at various points.</p>
+      <p><h4>5. Page templates</h4></p>
+      <p>Several page templates are included and also blog templates are included so that sidebar layout can be managed and maintained easily all throughout the website.</p>
+      <p><h4>6. WooCommerce Integration</h4></p>
+      <p>eCommerce of any website can be easily managed and created using WooCommerce plugin which has been now part of the core team and hence it is becoming increasingly easier for eCommerce to be added to any website out of the 
+        box as all our themes work with WooCommerce by default.</p>
+      <p><h4>7. Responsive and HD ready </h4></p>
+      <p>Responsiveness is now the life of all websites as more and more smartphone users are increasing and they are accessing the web via their smartphones and mobile phones and other handheld devices like tablets.</p>
+      <p>Also HD ready is a new thing because of the latest TVs which are also becoming smart. Higher resolution and bigger screen display of any website also has become a necessity therefore.</p>
+      <p><h4>8. Theme Design</h4></p>
+      <p>With changing trends we have also evolved our designs and constantly upgrade the themes. We normally use flat and material designs for maximum browser compatibility.</p>
+      <p><h4>9. Demo Version </h4></p>
+      <p>1 click demo importer is available with each template which means one can easily import any demo content and have the website ready just like shown in our demo.</p>
+      <p><h4>10. Security </h4></p>
+      <p>All our designs and templates are coded as per WordPress theme codex standards. Hence they are secured and are also compatible with security plugins.</p>
+
+    </div>
+
+  
+  <div class="cookie-bar">
+    By continuing to browse this site, you agree to our <a href="#" class="text-warning">use of cookies</a>.
+    <button class="btn btn-sm btn-primary">Agree</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
