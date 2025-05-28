@@ -1,0 +1,924 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   SKT Themes - WordPress Theme Features
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for the right side black circle icons */
+  .scroll-icons {
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 50;
+  }
+  .scroll-icons button {
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .scroll-icons button:hover {
+    background-color: #3b82f6;
+  }
+  /* Cookie bar style */
+  #cookie-bar {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 0.75rem;
+  }
+  #cookie-bar a {
+    color: #9ca3af;
+    text-decoration: underline;
+  }
+  #cookie-bar a:hover {
+    color: white;
+  }
+  </style>
+ </head>
+ <body class="bg-white font-sans">
+  <!-- Top bar with plugins, documentation, my account -->
+  <div class="bg-blue-600 text-white text-sm flex justify-end space-x-4 px-4 py-2">
+   <a class="hover:underline" href="#">
+    Plugins
+   </a>
+   <a class="hover:underline" href="#">
+    Documentation
+   </a>
+   <a class="hover:underline" href="#">
+    My Account
+   </a>
+  </div>
+  <!-- Header with logo and nav -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+   <div class="flex items-center space-x-1">
+    <span class="font-extrabold text-orange-500 text-2xl select-none">
+     SKT
+    </span>
+    <span class="font-extrabold text-blue-600 text-2xl select-none">
+     THEMES
+    </span>
+   </div>
+   <div class="text-xs text-gray-600 select-none">
+    Great Designs, Better Support
+   </div>
+   <nav>
+    <ul class="flex space-x-8 text-sm font-normal">
+     <li>
+      <a class="hover:underline text-black" href="#">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-black" href="#">
+       THEMES
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-blue-600 font-normal" href="#">
+       FEATURES
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-black" href="#">
+       PRICING
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-black" href="#">
+       CLIENT REVIEWS
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-black" href="#">
+       SUPPORT
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline text-black" href="#">
+       CONTACT
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <!-- Blue gradient hero section -->
+  <section class="bg-gradient-to-r from-blue-700 to-blue-400 text-white text-center py-12 px-4">
+   <h1 class="font-extrabold text-3xl md:text-4xl mb-2">
+    WordPress Theme Features
+   </h1>
+   <p class="text-sm md:text-base">
+    Everything you could ask for. More reasons to buy.
+   </p>
+  </section>
+  <!-- Breadcrumb -->
+  <div class="px-6 py-4 text-xs text-gray-600">
+   <a class="text-blue-600 hover:underline" href="#">
+    Home
+   </a>
+   <span class="text-gray-600">
+    » Theme Features
+   </span>
+  </div>
+  <!-- Features grid -->
+  <main class="px-6 pb-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+   <!-- Feature 1 -->
+   <article class="bg-blue-50 rounded-lg p-8 flex flex-col items-center text-center">
+    <div class="bg-white rounded-full p-8 mb-6">
+     <img src="p1.png"Red target icon with a hand cursor clicking in the center" height="96"  width="96"/>
+    </div>
+    <h3 class="font-semibold text-gray-900 mb-3">
+     One Click Demo Import
+    </h3>
+    <p class="text-sm text-gray-800 max-w-xs">
+     All of our themes come with 1 click demo import which means just like software installation you have to complete the process and at the end just a single click tells you the import process is done. All of this is automated and video documentation for the same is also present.
+    </p>
+   </article>
+   <!-- Feature 2 -->
+   <article class="bg-pink-50 rounded-lg p-8 flex flex-col items-center text-center">
+    <div class="bg-white rounded-full p-8 mb-6">
+     <img alt="Elementor logo with gradient pink and purple colors inside a white circle" height="96" src="p2.png" width="96"/>
+    </div>
+    <h3 class="font-semibold text-gray-900 mb-3">
+     Elementor Page builder
+    </h3>
+    <p class="text-sm text-gray-800 max-w-xs">
+     Homepage of SKT Themes are built using Elementor page builder free version that gives everyone with a lot of options.
+    </p>
+    <button class="mt-6 bg-pink-700 text-white rounded-full px-6 py-2 text-sm font-semibold hover:bg-pink-800 transition-colors">
+     View All Elementor Themes
+    </button>
+   </article>
+   <!-- Feature 3 -->
+   <article class="bg-purple-100 rounded-lg p-8 flex flex-col items-center text-center">
+    <div class="bg-white rounded-full p-8 mb-6">
+     <img alt="WooCommerce logo in purple inside a white circle" height="96" src="https://storage.googleapis.com/a1aa/image/43d65b54-284f-496e-65eb-39b90bd0e32b.jpg" width="96"/>
+    </div>
+    <h3 class="font-semibold text-gray-900 mb-3">
+     WooCommerce Compatible
+    </h3>
+    <p class="text-sm text-gray-800 max-w-xs">
+     Because the templates are WooCommerce ready you can start selling your products or services right-away.
+    </p>
+    <button class="mt-6 bg-purple-600 text-white rounded-full px-6 py-2 text-sm font-semibold hover:bg-purple-700 transition-colors">
+     View All WooCommerce Themes
+    </button>
+   </article>
+  </main>
+  
+   
+  <script>
+   document.getElementById('cookie-agree').addEventListener('click', () => {
+    document.getElementById('cookie-bar').style.display = 'none';
+  });
+  </script>
+ </body>
+</html>
+
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f7f9ff]">
+<div class="max-w-[1280px] mx-auto px-4 py-6">
+ <h2 class="text-center font-extrabold text-2xl text-gray-900 mb-6">
+  Overall Site Features
+ </h2>
+ <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue circular icon with letter G representing Gutenberg Compatible" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/b0f9f0ba-2ea3-4919-5a9d-122abcac0d21.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Gutenberg
+    <br/>
+    <strong>
+     Compatible
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue globe icon with www text representing Unlimited Websites" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/68ed1b5b-dc5c-44cc-42c3-6e9feb928218.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Unlimited
+    <br/>
+    <strong>
+     Websites
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue computer and mobile device icon representing Mobile Friendly" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/7e6d16a0-4185-48a1-0707-d3c487fabdaa.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Mobile
+    <br/>
+    <strong>
+     Friendly
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="White label icon with checkmark representing White - Label Whitelabel" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/f99e0e70-f7c7-4e67-313f-ab2e7aaecb67.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    White - Label
+    <br/>
+    <strong>
+     Whitelabel
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Green grid icon representing Site/Custom Layouts" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/69e2a48d-6156-4eb8-3499-a0d5a7fbf71a.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Site/Custom
+    <br/>
+    <strong>
+     Layouts
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue copyright icon representing Image Copyright Free" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/aed02252-e979-4eeb-3878-97a73e3a87d5.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Image
+    <br/>
+    <strong>
+     Copyright Free
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Green GPL icon representing GPL licensed Coding" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/f2ae4ac4-1bbd-486e-7301-df56ba4e6cc5.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    GPL licensed
+    <br/>
+    <strong>
+     Coding
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue PSD file icon representing PSD on Demand" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/51341e3c-c4a0-4f66-1c78-b205b13b1e38.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    PSD on
+    <br/>
+    <strong>
+     Demand
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue WordPress icon representing Compatible with Latest Version" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/f2d68562-daca-4015-09bf-cf4a660a7594.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Compatible with
+    <br/>
+    <strong>
+     Latest Version
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue page builder icon representing Page Builder Friendly" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/739af1e1-f06d-4bfa-40b8-e8c8c76faaf2.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Page Builder
+    <br/>
+    <strong>
+     Friendly
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Orange sticky pin icon representing Sticky Menu" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/332ff074-b141-4812-535e-b5511c7c09f0.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Sticky
+    <br/>
+    <strong>
+     Menu
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Purple header layout icon representing Header Layouts" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/8fc7d8bb-dd18-431c-de55-ccdcedb0a90b.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Header
+    <br/>
+    <strong>
+     Layouts
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Mega menu icon with browser window and menu representing Mega Menu" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/5ce99507-4f07-4638-2ae8-a8d376ffe192.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Mega
+    <br/>
+    <strong>
+     Menu
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Purple footer layout icon representing Footer Layouts" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/34aa61df-0cc7-470c-5a05-2f4b117b44d7.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Footer
+    <br/>
+    <strong>
+     Layouts
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Orange footer widgets icon representing Footer Widgets" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/5d4dfb4c-f2ce-4f2a-d356-42d86f5ddc2e.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Footer
+    <br/>
+    <strong>
+     Widgets
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Customizer options icon with sliders representing Customizer Options" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/170a3338-5607-4aed-6b71-f76d6c2c55bc.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Customizer
+    <br/>
+    <strong>
+     Options
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue copyright editable icon representing Copyright Editable" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/7d2c718c-600b-44b6-3ea7-50e9de48a0bd.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Copyright
+    <br/>
+    <strong>
+     Editable
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="WooCommerce sidebar icon representing WooCommerce Sidebar" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/acc82ce4-66b3-4f27-9bf2-1dac7a84f2c1.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    WooCommerce
+    <br/>
+    <strong>
+     Sidebar
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blog posts sidebar icon representing Blog posts Sidebar" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/fd5d0357-ea6e-45c9-93ac-e93877b91d17.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Blog posts
+    <br/>
+    <strong>
+     Sidebar
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Pages sidebar icon representing Pages Sidebar" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/35353190-51ee-4b66-8a87-608aa23ecac6.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Pages
+    <br/>
+    <strong>
+     Sidebar
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Sidebar widgets icon representing Sidebar Widgets" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/07a67d7e-5363-4ded-946e-188e8e882edb.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Sidebar
+    <br/>
+    <strong>
+     Widgets
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Blue Google font icon representing Google Font Options" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/942b12f2-c486-4d38-f201-06e0d92fac97.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Google Font
+    <br/>
+    <strong>
+     Options
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Custom fonts support icon representing Custom Fonts Support" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/3a61cdb9-d5a5-4419-3eca-0f19453c7d3a.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Custom Fonts
+    <br/>
+    <strong>
+     Support
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Color wheel icon representing Color Options" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/7f236e83-0fd3-48fb-0614-c92956fccf95.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Color
+    <br/>
+    <strong>
+     Options
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Multilingual plugins support icon with speech bubbles representing Multilingual Plugins Support" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/be754b0e-1122-4e0d-1152-7b8259807c6c.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Multilingual Plugins
+    <br/>
+    <strong>
+     Support
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Translation ready icon representing Translation Ready" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/813a8e27-d06f-4f44-61a1-c09d83190d8d.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Translation
+    <br/>
+    <strong>
+     Ready
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="RTL ready icon representing RTL Ready" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/18efa0e7-d230-4b5a-face-63a78afe0c7d.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    RTL
+    <br/>
+    <strong>
+     Ready
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Retina ready icon representing Retina Ready" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/0874d4c6-afed-4464-3ba7-2229d947f750.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Retina
+    <br/>
+    <strong>
+     Ready
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="HD ready icon representing HD Ready" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/e2edf880-291d-4ce3-3971-38ada147c7e5.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    HD
+    <br/>
+    <strong>
+     Ready
+    </strong>
+   </p>
+  </div>
+  <div class="bg-white rounded-xl p-6 flex flex-col items-center space-y-2">
+   <img alt="Font based icons support icon representing Font based icons Support" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/324f455d-80ed-4547-ae7d-045c3dc9b66f.jpg" width="64"/>
+   <p class="text-center text-xs text-gray-700">
+    Font based icons
+    <br/>
+    <strong>
+     Support
+    </strong>
+   </p>
+  </div>
+ </div>
+</div>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+ body {
+    font-family: "Inter", sans-serif;
+  }
+</style>
+</head>
+<body class="bg-white text-gray-900">
+<section class="py-10 px-4 max-w-7xl mx-auto">
+ <h2 class="text-center font-semibold text-2xl mb-10">
+  Theme Support
+ </h2>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div class="bg-gradient-to-b from-[#0f8ddb] to-[#1fb1f9] rounded-xl p-8 flex flex-col items-center text-white text-center">
+   <div class="bg-white rounded-full p-2 mb-1">
+    <img alt="Icon of a document with a pen on white circular background" class="block" height="96" src="Q1.png" width="250"/>
+   </div>
+   <p class="text-sm mb-1">
+    Comprehensive
+   </p>
+   <h3 class="font-bold text-lg mb-4">
+    Documentation
+   </h3>
+   <p class="text-sm max-w-[320px]">
+    Video as well as textual documentation as well as a separate docs area and support forum previous queries answered give customer ample and extensive help guidance.
+   </p>
+  </div>
+  <div class="bg-gradient-to-b from-[#0f8ddb] to-[#1fb1f9] rounded-xl p-8 flex flex-col items-center text-white text-center">
+   <div class="bg-white rounded-full p-2 mb-1">
+    <img alt="Icon of a blue gear on white circular background" class="block" height="96" src="Q2.png" width="250"/>
+   </div>
+   <p class="text-sm mb-1">
+    Free Theme
+   </p>
+   <h3 class="font-bold text-lg mb-4">
+    Installation
+   </h3>
+   <p class="text-sm max-w-[320px]">
+    We provide free installation for all of our themes. In case you get stuck during installation process just email us at support@sktthemes.com and we will get it sorted for you.
+   </p>
+  </div>
+  <div class="bg-gradient-to-b from-[#0f8ddb] to-[#1fb1f9] rounded-xl p-8 flex flex-col items-center text-white text-center">
+   <div class="bg-white rounded-full p-2 mb-1">
+    <img alt="Icon of a document with a pen on white circular background" class="block" height="96" src="Q3.png" width="250"/>
+   </div>
+   <p class="text-sm mb-1">
+    Support via Email and
+   </p>
+   <h3 class="font-bold text-lg mb-4">
+    Support Forum
+   </h3>
+   <p class="text-sm max-w-[320px]">
+    1 Year Support can be provided via Email and Support Forum. WhatsApp and live chat guidance for sales and urgent support is also extended to our customers.
+   </p>
+  </div>
+ </div>
+</section>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<style>
+ /* Use Inter font from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+</style>
+</head>
+<body class="bg-[#f7f9ff] text-[#2b2b2b]">
+<main class="max-w-[1280px] mx-auto px-4 py-10">
+ <!-- SEO and Page Speed Features -->
+ <section>
+  <h2 class="text-center font-semibold text-lg mb-6">
+   SEO and Page Speed Features
+  </h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green magnifier with chart icon representing Search Engine Friendly" class="mb-2" height="48" src="e1.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Search Engine
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Friendly
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue speedometer icon representing Speed Optimized" class="mb-2" height="48" src="e2.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Speed
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Optimized
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue cache batteries icon representing Cache Plugins" class="mb-2" height="48" src="e3.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Cache
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugins
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue speedometer icon representing Further Optimization" class="mb-2" height="48" src="e4.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Further
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Optimization
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green circle with CDN text representing CDN Support" class="mb-2" height="48" src="e5.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     CDN
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Support
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green lightning icon representing Jetpack Support" class="mb-2" height="48" src="e6.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Jetpack
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Support
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Red plugin icon representing SEO Plugins" class="mb-2" height="48" src="e7.png" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     SEO
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugins
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Google PageSpeed Insights logo representing Core Web Vitals Speed Optimised" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/abc60966-00ec-4df8-7676-de6ab06be533.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Core Web Vitals
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Speed Optimised
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="GTmetrix logo representing gtmetrix Speed Optimised" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/f7467abf-fc71-4742-2ea6-fbd7d8711fb3.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     gtmetrix
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Speed Optimised
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Pingdom logo representing Pingdom Tools Speed Optimised" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/6f8f1a20-d091-4195-8da5-0945c74f9a1b.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Pingdom Tools
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Speed Optimised
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Purple YSlow logo representing YSlow Speed Optimised" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/1db51241-f1a3-47b1-0a2f-361277938a49.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     YSlow
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Speed Optimised
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue speedometer icon representing Lightweight Theme" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/561c20a3-2700-47b5-63fc-425716ec14d9.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Lightweight
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Theme
+    </p>
+   </div>
+  </div>
+ </section>
+ <!-- Theme Security Features -->
+ <section class="mt-16">
+  <h2 class="text-center font-semibold text-lg mb-6">
+   Theme Security Features
+  </h2>
+  <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 max-w-4xl mx-auto">
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Red plugin icon representing Security Plugins" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/4e36273f-4dab-4522-bf9a-3acbdfa44b5b.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Security
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugins
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue circle backup icon representing Backup Plugins" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/0d07eff8-afd4-45e7-de66-01c05ccb8543.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Backup
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugins
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue coding standards icon representing Coding Standards" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/a5cadba9-9f7d-47c9-587c-55df88302f12.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Coding
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Standards
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue theme review icon representing Theme Review" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/9b73c2b7-3d3a-4d23-2cc9-207e0ebf9d4a.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Theme
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Review
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue hosting server icon representing Hosting Requirement" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/bcde5afb-644b-4a60-89a8-e4918154437a.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Hosting
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Requirement
+    </p>
+   </div>
+  </div>
+ </section>
+ <!-- Premium Plugins -->
+ <section class="mt-16">
+  <h2 class="text-center font-semibold text-lg mb-6">
+   Premium Plugins
+  </h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue hotel building icon representing Hotel Booking Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/374b09b9-777e-4c56-7e72-8f3685e6c861.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Hotel Booking
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Blue calendar icon representing Appointment Schedule Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/9ca0bab9-c180-4ccb-9ec5-8551fc3bee09.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Appointment Schedule
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Yellow testimonials icon representing Testimonials Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/c7b0dbcf-6730-448d-ecc2-feec8dae408d.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Testimonials
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green popup icon representing Popup Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/f352b7a2-83cb-4a75-2ce4-8425e8f7321a.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Popup
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green donation icon representing Donation Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/5de55c7f-f7f4-440c-9ec9-dbd3b0b4bffa.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Donation
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+   <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+    <img alt="Green post variations icon representing Post Variations Plugin" class="mb-2" height="48" src="https://storage.googleapis.com/a1aa/image/4945eb82-9609-4e2f-cade-013919ecd19f.jpg" width="48"/>
+    <p class="text-[10px] text-center font-normal">
+     Post Variations
+    </p>
+    <p class="text-[11px] font-extrabold text-center">
+     Plugin
+    </p>
+   </div>
+  </div>
+ </section>
+</main>
+  <section class="py-10 text-center">
+    <h2 class="text-xl font-semibold text-gray-900">FAQs</h2>
+  </section>
+
+  <footer class="bg-[#1571bc] text-white">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-semibold mb-4">Quick Links</h3>
+        <div class="flex flex-col space-y-2 text-xs">
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">About Us</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Managed Hosting</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Customization</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Hire WP Developer</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">PSD to WP</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">WP Monthly Maintenance</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Blog</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Sitemap</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Terms</button>
+          <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Privacy</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:space-x-12">
+        <div>
+          <h3 class="font-semibold mb-4">Categories</h3>
+          <div class="flex flex-col space-y-2 text-xs">
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Others</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Author</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Automotive</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Bakery</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Blog</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Business</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Church</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Construction</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Corporate</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Dentist</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Ebook</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Ecommerce</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Education</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Entertainment</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Fitness</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Free</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Gutenberg</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Hotel</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">HTML</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Interior</button>
+          </div>
+        </div>
+        <div class="mt-6 md:mt-0">
+          <div class="flex flex-col space-y-2 text-xs">
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Lawyer</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Magazine</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Medical</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Multipurpose</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Music Artist</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">News</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">NGO</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Non profit</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">One Page</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Personal</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Photography</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Plugins</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Portfolio</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Real Estate</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Restaurant</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Spa and Salon</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Sports</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Technology</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Travel</button>
+            <button class="text-left px-2 py-1 rounded transition-colors duration-300 hover:bg-black">Wedding</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-4">Recent Post</h3>
+        <article class="mb-6 text-xs">
+          <h4 class="font-bold leading-snug">
+            Magento to WordPress Migration Services for Seamless Website Transfer
+          </h4>
+          <p class="mt-1 leading-relaxed">
+            Magento to WordPress Migration The migration process is indeed helpful for your dream business as your e-commerce business needs this buckle up to grow and […]
+          </p>
+          <hr class="border-t border-[#1a6dbd] mt-4 mb-4" />
+          <h4 class="font-bold leading-snug">
+            7 Best Promising WordPress Themes for Building Great Elegant Websites
+          </h4>
+          <p class="mt-1 leading-relaxed">
+            Promising WordPress Themes We have collected the most promising WordPress themes to guarantee the sustainable and revenue generating nature of your website revolving around any […]
+          </p>
+          <hr class="border-t border-[#1a6dbd] mt-4 mb-4" />
+          <h4 class="font-bold leading-snug">
+            12 Best Free WordPress Google Map Plugins for Google Maps
+          </h4>
+          <p class="mt-1 leading-relaxed">
+            Free WordPress Google Map Plugins Google Maps are the maps that can be integrated into your website to show the address in the proper way. […]
+          </p>
+        </article>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-4">Follow Us</h3>
+        <div class="flex space-x-3">
+          <a href="#" class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white text-sm transition-colors duration-300 hover:bg-[#000000cc]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white text-sm transition-colors duration-300 hover:bg-[#000000cc]">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#1261a3] text-center text-xs py-2">
+      Copyright © 2025 SKT Web Themes LLC
+    </div>
+  </footer>
+</body>
+</html>
