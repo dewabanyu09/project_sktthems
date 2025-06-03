@@ -15,17 +15,24 @@ Kustomisasi Mudah: Pengguna dapat dengan mudah menyesuaikan warna, tipografi, he
 Lisensi untuk Multi-Situs: Tema dapat digunakan di beberapa situs web tanpa batasan.
 
 NAMA KELOMPOK:
+
 Bayu Candra Hermawan.
 Bagian: Features
+
 Damar Fadhilah Suma T.
 Bagian: Themes
+
 Devin Al Qahtani.
 Bagian: Client Reviews
+
 Dewa Banyu Samudra.
 Bagian: Home
+
 M. Irvan Nur R.
 Bagian: Pricing
+
 M. Waffiudin Alfatah.
 Bagian: Support
+
 Rully choirul Azwar.
-Bagian: Contact
+Bagian: Contact 
