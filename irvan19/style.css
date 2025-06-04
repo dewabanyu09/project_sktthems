@@ -1,0 +1,441 @@
+/* ===== Global Styles ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* ===== Custom Navbar ===== */
+.custom-navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  position: relative;
+}
+
+.custom-logo {
+  width: 181px;
+  height: 59px;
+  transition: opacity 0.3s;
+}
+
+.custom-logo:hover {
+  opacity: 0.9;
+}
+
+/* ===== Top Blue Bar ===== */
+.top-blue-bar {
+  background: linear-gradient(to right, #4a90e2, #00c6ff);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 3px;
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.top-blue-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: opacity 0.3s;
+}
+
+.top-blue-bar a:hover {
+  opacity: 0.9;
+}
+
+.top-blue-bar a:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  color: white;
+}
+
+/* ===== Custom Hamburger Menu ===== */
+.custom-toggler {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  z-index: 1000;
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+.custom-toggler.active .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.active .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== Main Navigation ===== */
+.nav-menu {
+  display: flex;
+  gap: 35px;
+  flex-wrap: nowrap;
+  padding: 10px 0;
+  margin: 15px 0 0 0;
+  list-style: none;
+}
+
+.nav-item .nav-link {
+  color: #333 !important;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 8px 0 !important;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+  color: #ffd500 !important;
+}
+
+.current-menu-item .nav-link {
+  color: #007bff !important;
+  font-weight: 500;
+}
+
+/* ===== Mobile Navigation ===== */
+.nav-collapse {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .custom-toggler {
+    display: block;
+  }
+
+  .nav-collapse {
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-collapse.active {
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .top-blue-bar {
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .top-blue-bar.mobile-visible {
+    display: flex !important;
+  }
+}
+
+/* ===== Common Components ===== */
+.hero-section {
+  min-height: 100vh;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 767.98px) {
+  .custom-logo {
+    width: 140px;
+    height: 45px;
+  }
+
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .theme-image {
+    height: 250px;
+  }
+}
+
+/* ===== Existing Styles Preservation ===== */
+/* (Tetap pertahankan style berikut tanpa perubahan) */
+.hover-dark:hover {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+.hero {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(43, 93, 194, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  color: #0066ff;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.price {
+  margin: 20px 0;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.current-price {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.blue-price {
+  color: #0066ff;
+}
+
+.black-price {
+  color: #000;
+}
+
+.currency {
+  font-size: 20px;
+  vertical-align: super;
+}
+
+.save-badge {
+  background-color: #ff9500;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-item {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+.btn-action {
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: auto;
+  color: white;
+  border: none;
+  width: 80%;
+}
+
+.btn-blue {
+  background: linear-gradient(90deg, #3754e5, #4b9fee);
+}
+
+.btn-blue:hover {
+  background: black;
+  color: white;
+}
+
+.btn-black {
+  background-color: #000;
+}
+
+.btn-black:hover {
+  background-color: #464646;
+  color: white;
+}
+
+.middle-card {
+  border: 2px solid #000000;
+  position: relative;
+}
+
+.faq-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .currency-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .currency-info p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .indian-info {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .indian-info a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .faq-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .accordion-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .accordion-header {
+            background-color: #f8f9fa;
+            border: none;
+        }
+        .accordion-button {
+            font-weight: bold;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
+            color: #333;
+            box-shadow: none;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: #e0e0e0;
+        }
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: rotate(-180deg);
+        }
+        .accordion-body {
+            padding: 20px;
+            background-color: #fff;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+/* ===== Responsive Design ===== */
+@media (max-width: 991.98px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-blue-bar {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+
+  }
+
+  .side-image {
+    max-width: 200px;
+    margin: 30px auto;
+  }
+
+  .sidebar-right {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
